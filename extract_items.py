@@ -15,6 +15,7 @@ from tqdm import tqdm
 from typing import Any, Dict, List, Optional, Tuple
 
 from logger import Logger
+import gzip
 
 from __init__ import DATASET_DIR
 
@@ -731,7 +732,7 @@ class ExtractItems:
 
         return json_content
 
-    def process_filing(self, filing_metadata: Dict[str, Any]) -> int:
+    def process_filing(self, filing_metadata: Dict[str, Any], compressed=True) -> int:
         """
         Process a filing by extracting items/sections and saving the content to a JSON file.
 
@@ -759,8 +760,12 @@ class ExtractItems:
 
         # Write the JSON content to the file if it's not None
         if json_content is not None:
-            with open(absolute_json_filename, "w") as filepath:
-                json.dump(json_content, filepath, indent=4)
+            if compressed:
+                with gzip.open(absolute_json_filename + ".gz", "wt") as filepath:
+                    json.dump(json_content, filepath, indent=4)
+            else:
+                with open(absolute_json_filename, "w") as filepath:
+                    json.dump(json_content, filepath, indent=4)
 
         return 1
 
