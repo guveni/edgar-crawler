@@ -169,3 +169,5 @@ cython_debug/
 .idea/
 data/*
 .DS_Store
+
+.vscode/*
