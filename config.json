@@ -3,17 +3,17 @@
 		"start_year": 2020,
 		"end_year": 2024,
 		"quarters": [1, 2, 3, 4],
-		"filing_types": ["10-K", "10-K405", "10-KT", "10-Q"],
-		"cik_tickers": ["TSLA"],
+		"filing_types": ["10-K", "10-Q"],
+		"cik_tickers": ["TSLA", "F", "RIVN", "NVDA", "ADBE"],
 		"user_agent": "test@gmail.com",
-		"raw_filings_folder": "/Users/guven/Documents/investment_research/code/edgar-crawler/data/tesla/raw_filings",
-		"indices_folder": "/Users/guven/Documents/investment_research/code/edgar-crawler/data/tesla/indices",
+		"raw_filings_folder": "/Users/guven/Documents/investment_research/code/edgar-crawler/data/sp500_subset/raw_filings",
+		"indices_folder": "/Users/guven/Documents/investment_research/code/edgar-crawler/data/sp500_subset/indices",
 		"filings_metadata_file": "filings_metadata.csv",
 		"skip_present_indices": true
 	},
 	"extract_items": {
-		"raw_filings_folder": "/Users/guven/Documents/investment_research/code/edgar-crawler/data/tesla/raw_filings",
-		"extracted_filings_folder": "/Users/guven/Documents/investment_research/code/edgar-crawler/data/tesla/extracted_filings",
+		"raw_filings_folder": "/Users/guven/Documents/investment_research/code/edgar-crawler/data/sp500_subset/raw_filings",
+		"extracted_filings_folder": "/Users/guven/Documents/investment_research/code/edgar-crawler/data/sp500_subset/extracted_filings",
 		"filings_metadata_file": "filings_metadata.csv",
 		"items_to_extract": [
 			"1", "1A", "1B", "2", "3", "4", "5", "6", "7", "7A",
