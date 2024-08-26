@@ -4,7 +4,7 @@
 		"end_year": 2024,
 		"quarters": [1, 2, 3, 4],
 		"filing_types": ["10-K", "10-Q"],
-		"cik_tickers": ["TSLA", "F", "RIVN", "NVDA", "ADBE"],
+		"cik_tickers": ["TSLA", "F", "RIVN", "NVDA", "ADBE", "UBER"],
 		"user_agent": "test@gmail.com",
 		"raw_filings_folder": "/Users/guven/Documents/investment_research/code/edgar-crawler/data/sp500_subset/raw_filings",
 		"indices_folder": "/Users/guven/Documents/investment_research/code/edgar-crawler/data/sp500_subset/indices",
